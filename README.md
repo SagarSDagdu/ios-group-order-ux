@@ -2,16 +2,26 @@
 
 ## Overview
 
-Group Order Food Example is a fun iOS project that demonstrates the user experience of group ordering functionality in a food app. The inspiration to create this project is taken from Swiggy app!
+Group Order Food Example is a fun iOS project demonstrating the user experience of group ordering functionality in a food app. The inspiration to create this project is taken from the Swiggy app!
 
-This project showcases the use of `UIActivityViewController` for sharing, custom URL schemes for deep linking, and iOS 17's new NameDrop like animation for sharing data.
+This project showcases the use of `UIActivityViewController` for sharing, custom URL schemes for deep linking, and iOS 17's new NameDrop-like animation for sharing data.
+
+## Demo
+
+### Senders iPhone (Group Order Creator)
+
+https://github.com/user-attachments/assets/de67d03d-1f9d-41df-b7d9-87f3674405cc
+
+### Receiver's iPhone (Group Order Participant)
+
+https://github.com/user-attachments/assets/73c4aa53-7ed3-41b5-b327-4e68362223bf
 
 ## Features
 
 - Create and share group food orders
 - Custom URL scheme handling for deep linking
 - Animated emoji display in the order acceptance view
-- Support for iOS 17's NameDrop like animation for sharing data
+- Support for iOS 17's NameDrop-like animation for sharing data
 - Clean and intuitive user interface
 
 ## Requirements
