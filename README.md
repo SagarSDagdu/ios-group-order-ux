@@ -24,7 +24,7 @@ This project showcases the use of `UIActivityViewController` for sharing, custom
 
 1. Clone the repository:
 ```
-git clone https://github.com/yourusername/GroupOrderFoodExample.git
+git clone https://github.com/SagarSDagdu/GroupOrderFoodExample.git
 ```
 2. Open `GroupOrderFoodExample.xcodeproj` in Xcode.
 3. Build and run the project on two of your iOS devices that support AirDrop tap to share.
