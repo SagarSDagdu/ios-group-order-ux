@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShareDropExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55J-Zh-SvM">
+                                <rect key="frame" x="92.666666666666686" y="294.66666666666669" width="208" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Share group order">
+                                    <imageReference key="image" image="person.3.fill" catalog="system" symbolScale="large"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="shareGroupOrder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oBI-Gu-St1"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PAo-U0-2bK">
+                                <rect key="frame" x="32" y="128.66666666666666" width="329" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Restaurant name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XbM-hJ-dvd">
+                                <rect key="frame" x="32" y="180.66666666666666" width="329" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group Food Ordering 🍔🥗" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8V-S9-0UU">
+                                <rect key="frame" x="32" y="77" width="329" height="27.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PAo-U0-2bK" secondAttribute="trailing" constant="32" id="348-kS-1dM"/>
+                            <constraint firstItem="55J-Zh-SvM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8r7-6B-HLr"/>
+                            <constraint firstItem="r8V-S9-0UU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Cua-Lh-n0L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r8V-S9-0UU" secondAttribute="trailing" constant="32" id="Gid-LG-2iR"/>
+                            <constraint firstItem="PAo-U0-2bK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="HSB-2f-Oau"/>
+                            <constraint firstItem="r8V-S9-0UU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="Kki-ZJ-6r0"/>
+                            <constraint firstItem="XbM-hJ-dvd" firstAttribute="top" secondItem="PAo-U0-2bK" secondAttribute="bottom" constant="18" id="UXS-qY-Tcv"/>
+                            <constraint firstItem="XbM-hJ-dvd" firstAttribute="leading" secondItem="PAo-U0-2bK" secondAttribute="leading" id="Xrc-XR-d1z"/>
+                            <constraint firstItem="55J-Zh-SvM" firstAttribute="top" secondItem="XbM-hJ-dvd" secondAttribute="bottom" constant="80" id="lXb-3l-cly"/>
+                            <constraint firstItem="PAo-U0-2bK" firstAttribute="top" secondItem="r8V-S9-0UU" secondAttribute="bottom" constant="24" id="upX-UV-GgP"/>
+                            <constraint firstItem="XbM-hJ-dvd" firstAttribute="trailing" secondItem="PAo-U0-2bK" secondAttribute="trailing" id="vb2-yX-4oU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="restaurantName" destination="XbM-hJ-dvd" id="JFY-3A-SzH"/>
+                        <outlet property="username" destination="PAo-U0-2bK" id="SFT-hK-vi5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85" y="-2"/>
+        </scene>
+        <!--Group Order Accept View Controller-->
+        <scene sceneID="Tsb-OQ-byj">
+            <objects>
+                <viewController storyboardIdentifier="GroupOrderAcceptViewController" id="Yvu-Be-HHf" customClass="GroupOrderAcceptViewController" customModule="ShareDropExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Txw-8M-fZd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yaay!! 😋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZq-Dg-H5Y">
+                                <rect key="frame" x="32" y="119.00000000000001" width="329" height="40.666666666666671"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have been invited by Sagar, to order delicious food from Faasos!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yT-n6-831">
+                                <rect key="frame" x="32" y="183.66666666666666" width="329" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍔" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tle-Gc-DFL">
+                                <rect key="frame" x="32" y="295.66666666666669" width="329" height="71.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="fEB-mT-oze">
+                                <rect key="frame" x="32" y="431.33333333333331" width="329" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGX-1q-IlN">
+                                        <rect key="frame" x="0.0" y="0.0" width="158.66666666666666" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="0Th-P2-gFn"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="No thanks 😪">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="noThanksClicked:" destination="Yvu-Be-HHf" eventType="touchUpInside" id="W1Q-sf-Jar"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAF-VD-NzO">
+                                        <rect key="frame" x="170.66666666666663" y="0.0" width="158.33333333333337" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Less go! 🚀">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letsGoClicked:" destination="Yvu-Be-HHf" eventType="touchUpInside" id="WSq-jR-gmm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hDZ-MB-vud"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fEB-mT-oze" firstAttribute="leading" secondItem="0yT-n6-831" secondAttribute="leading" id="Fqa-WQ-4N0"/>
+                            <constraint firstItem="0yT-n6-831" firstAttribute="trailing" secondItem="LZq-Dg-H5Y" secondAttribute="trailing" id="GqS-U5-riQ"/>
+                            <constraint firstItem="hDZ-MB-vud" firstAttribute="trailing" secondItem="Tle-Gc-DFL" secondAttribute="trailing" constant="32" id="LOB-E4-AeY"/>
+                            <constraint firstItem="Tle-Gc-DFL" firstAttribute="top" secondItem="0yT-n6-831" secondAttribute="bottom" constant="64" id="NI9-Rg-fE4"/>
+                            <constraint firstItem="fEB-mT-oze" firstAttribute="top" secondItem="Tle-Gc-DFL" secondAttribute="bottom" constant="64" id="WNN-gt-L7Q"/>
+                            <constraint firstItem="LZq-Dg-H5Y" firstAttribute="top" secondItem="hDZ-MB-vud" secondAttribute="top" constant="60" id="X5b-5s-Spz"/>
+                            <constraint firstItem="hDZ-MB-vud" firstAttribute="trailing" secondItem="LZq-Dg-H5Y" secondAttribute="trailing" constant="32" id="amL-1s-g54"/>
+                            <constraint firstItem="LZq-Dg-H5Y" firstAttribute="leading" secondItem="hDZ-MB-vud" secondAttribute="leading" constant="32" id="b4H-In-upB"/>
+                            <constraint firstItem="fEB-mT-oze" firstAttribute="trailing" secondItem="0yT-n6-831" secondAttribute="trailing" id="bNm-1e-trX"/>
+                            <constraint firstItem="Tle-Gc-DFL" firstAttribute="leading" secondItem="hDZ-MB-vud" secondAttribute="leading" constant="32" id="qk1-HI-bae"/>
+                            <constraint firstItem="0yT-n6-831" firstAttribute="top" secondItem="LZq-Dg-H5Y" secondAttribute="bottom" constant="24" id="ys0-tP-qlG"/>
+                            <constraint firstItem="0yT-n6-831" firstAttribute="leading" secondItem="LZq-Dg-H5Y" secondAttribute="leading" id="zeU-V2-h2r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="0yT-n6-831" id="Xzl-ld-3hy"/>
+                        <outlet property="emojisLabel" destination="Tle-Gc-DFL" id="0NB-cd-lFt"/>
+                        <outlet property="letsGoButton" destination="FAF-VD-NzO" id="aEV-4u-NNB"/>
+                        <outlet property="noThanksButton" destination="uGX-1q-IlN" id="OVq-mZ-g5h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WfA-P0-9oL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.3.fill" catalog="system" width="128" height="66"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
